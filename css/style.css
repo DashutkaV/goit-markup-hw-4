@@ -178,6 +178,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
+    height: 600px;
     margin: 0 auto;
 }
 
@@ -212,6 +213,33 @@ img {
 
 .features-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.item-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.item-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.item-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.item-austronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
@@ -363,6 +391,14 @@ img {
 
 .portfolio-item {
     flex-basis: calc((100% - 60px) /3);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    cursor: pointer;
+    /* border: 1px solid rgba(238, 238, 238, 1); */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .portfolio-description {
