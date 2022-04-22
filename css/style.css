@@ -346,8 +346,16 @@ img {
 }
 
 .team-soc-link:hover {
+    /* display: block; */
+    /* display: inline-block; */
     background-color: var(--accent-color);
     fill: var(--btn-color);
+}
+
+.team-soc-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--btn-color);
+    border: 0px;
 }
 
 /*------------PORTFOLIO---------------*/
