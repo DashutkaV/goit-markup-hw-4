@@ -153,6 +153,7 @@ img {
 .header-list{
     display: flex;
     margin-left: auto;
+    /* justify-content: center; */
 }
 
 .header-item:not(:last-child) {
@@ -160,21 +161,42 @@ img {
 }
 
 .header-link {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-link-color);
+
 }
 
-.header-link:hover,
+/* .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
+} */
+
+.icon-contact {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    fill: var(--header-link-color);
+}
+
+.header-list .icon-contact:hover,
+.header-list .icon-contact:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .active {
     color: var(--accent-color);
-}
+} 
+
+/* .icon-contact::before {
+    content: "";
+    display: inline;
+    vertical-align: center;
+} */
 
 /*-------------HERO---------------*/
 
@@ -364,11 +386,11 @@ img {
     fill: var(--btn-color);
 }
 
-.team-soc-link:focus {
+/* .team-soc-link:focus {
     background-color: var(--accent-color);
     fill: var(--btn-color);
     border: 0px;
-}
+} */
 
 /*------------CLIENTS---------------*/
 
@@ -396,21 +418,33 @@ img {
     justify-content: center;
     align-items: center;
     /* fill: rgba(175, 177, 184, 1); */
-    border: 1px solid rgba(175, 177, 184, 1)
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
 }
 
 .client-link:hover {
-    /* display: block; */
-    /* display: inline-block; */
-    background-color: var(--accent-color);
-    fill: var(--btn-color);
+    /* display: block;  */
+    /* display: inline-block;  */
+    border: 1px solid var(--accent-color);
+    /* fill: var(--accent-color); */
+}
+/* 
+.client-link:focus {
+    border: 1px solid var(--accent-color);
+} */
+
+.client-icon {
+    fill: #afb1b8;
 }
 
-.client-link:focus {
-    background-color: var(--accent-color);
-    fill: var(--btn-color);
-    border: 0px;
+.client-icon:hover {
+    fill: var(--accent-color);
 }
+
+/* .client-icon:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+} */
 
 /*------------PORTFOLIO---------------*/
 
@@ -517,6 +551,8 @@ img {
 
 .footer-content .contacts {
     display: flex;
+
+    /* align-items: baseline; */
 }
 
 .address-content {
@@ -561,6 +597,7 @@ img {
 
 .contacts-soc {
     flex-grow: 1;
+    padding-top: 12px;
 }
 
 .contacts-soc-title {
