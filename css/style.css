@@ -543,19 +543,22 @@ img {
     background: var(--bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
-    /* padding-right: 878px; */
+    padding-left: 75px;
+    padding-right: 878px;
+    margin: 0 auto;
 
 }
 
 .footer-content .contacts {
     display: flex;
 
-    /* align-items: baseline; */
+    align-items: baseline;
 }
 
 .address-content {
     width: 300px;
+    padding-right: 150px;
+    text-align: cover;
 }
 
 .address {
@@ -566,6 +569,10 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-top: 20px;
+}
+
+.footer-list {
+    text-align: 120px;
 }
 
 .footer-address {
